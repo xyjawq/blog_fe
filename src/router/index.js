@@ -1,23 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Header from '../components/header.vue'
-import UserCenter from '../view/userCenter.vue'
+import FrameWork from '../components/framework.vue'
+import home from '../router/home'
+import user from '../router/user'
+import article from '../router/ariticle'
 
 Vue.use(Router)
 
-console.log('router test')
 export default new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: Header
-    },
-    {
-      path: 'user',
-      name: 'userCenter',
-      component: UserCenter
+      redirect: {name: 'home'},
+      name: 'root',
+      component: FrameWork,
+      children: [ home, user, article ]
     }
   ]
 })

@@ -25,7 +25,7 @@
 
 <script>
   export default {
-    name: 'header',
+    name: 'user',
     data () {
       return {
         vm: {}
