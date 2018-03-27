@@ -1,7 +1,7 @@
 
 import Home from '../view/home/home.vue'
 import RecommendArticle from '../view/home/recommendArticle.vue'
-import ArticleList from '../view/common/articleList.vue'
+import ArticleList from '../view/home/groupArticle.vue'
 
 export default {
   path: 'home',
